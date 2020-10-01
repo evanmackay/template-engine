@@ -56,7 +56,7 @@ function continuedQuestions() {
                 internQuestions()
             } else {
                 console.log(employees)
-                render(employees)
+                fs.writeFileSync(outputPath, render(employees), 'utf-8')
             }
         })
 }
