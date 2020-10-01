@@ -55,7 +55,7 @@ function continuedQuestions() {
             } else if (response.otherinitial === 'Intern') {
                 internQuestions()
             } else {
-                console.log(employees)
+                console.log('Your team has been built!')
                 fs.writeFileSync(outputPath, render(employees), 'utf-8')
             }
         })
